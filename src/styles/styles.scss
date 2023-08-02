@@ -1,0 +1,52 @@
+body { background-color: black; }
+
+main {
+    font-family: 'Roboto', sans-serif, serif;
+    padding: 20px;
+}
+
+.headBanner {
+    $radius: 30px;
+    $bgcolor: #d1d4ff;
+
+    background-color: $bgcolor;
+    height: 500px;
+    border-radius: $radius;
+    position: relative;
+
+    .upButton {
+        padding: 20px 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom-left-radius: $radius;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: black;
+        color: yellow;
+
+        .round1, .round2 {
+            position: absolute;
+            height: $radius;
+            width: $radius;
+            background-color: black;
+
+            div {
+                position: absolute;
+                top: 0; right: 0;
+                left: 0; bottom: 0;
+                border-top-right-radius: $radius;
+                background-color: $bgcolor;
+            }
+        }
+        .round1 {
+            top: 0;
+            left: -$radius;
+        }
+        .round2 {
+            bottom: -$radius;
+            right: 0;
+        }
+    }
+}
