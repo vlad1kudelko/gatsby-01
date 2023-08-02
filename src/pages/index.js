@@ -8,7 +8,7 @@ const IndexPage = () => {
     <main>
         <div className='headBanner'>
             <div className='banner'>
-                <StaticImage src='../images/undraw_learning_sketching_nd4f.svg' style={{ width: '300px' }} />
+                <StaticImage alt='' src='../images/undraw_learning_sketching_nd4f.svg' style={{ width: '300px' }} />
                 <div>Smart manage <br/> time with AI</div>
             </div>
             <div className='navBar'>
@@ -24,6 +24,20 @@ const IndexPage = () => {
             </div>
             <div className='upButton'>
                 <a href='#'>Download</a>
+                <div className='round1'><div/></div>
+                <div className='round2'><div/></div>
+            </div>
+        </div>
+        <div className='subBanners'>
+            <div className='box1'>
+            </div>
+            <div className='box2'>
+            </div>
+            <div className='box3'>
+                <div className='border1'>
+                    <div></div>
+                    <div></div>
+                </div>
                 <div className='round1'><div/></div>
                 <div className='round2'><div/></div>
             </div>
