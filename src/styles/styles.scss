@@ -1,5 +1,4 @@
 body { background-color: black; }
-
 main {
     font-family: 'Roboto', sans-serif, serif;
     padding: 20px;
@@ -16,18 +15,53 @@ main {
     border-radius: $radius;
     position: relative;
 
+    .banner {
+        position: absolute;
+        top: 0; left: 0;
+        right: 0; bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navBar {
+        font-size: 1.1em;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+
+        @media (min-width: 800px) {
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media (max-width: 800px) {
+            & > *:nth-child(1) { padding: 20px 30px; }
+            & > *:nth-child(2) { padding: 20px 30px; }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover { color: gray; }
+        }
+        .btns {
+            text-align: center;
+            & > * { margin: 20px; }
+        }
+    }
     .upButton {
         padding: 20px 30px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-bottom-left-radius: $radius;
         font-size: 1.1em;
+        position: absolute;
+        top: 0; right: 0;
+        border-bottom-left-radius: $radius;
         text-transform: uppercase;
         font-weight: bold;
         background-color: black;
-        color: yellow;
 
+        a {
+            text-decoration: none;
+            color: yellow;
+        }
         .round1, .round2 {
             position: absolute;
             height: $radius;
