@@ -1,8 +1,8 @@
 {
-  "name": "my-gatsby-site",
+  "name": "gatsby-01",
   "version": "1.0.0",
   "private": true,
-  "description": "my-gatsby-site",
+  "description": "gatsby-01",
   "author": "name",
   "keywords": [
     "gatsby"
@@ -24,6 +24,7 @@
     "gatsby-plugin-sitemap": "^6.11.0",
     "gatsby-source-filesystem": "^5.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.64.2"
