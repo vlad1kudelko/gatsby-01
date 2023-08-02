@@ -8,7 +8,12 @@ const IndexPage = () => {
     <main>
         <div className='headBanner'>
             <div className='banner'>
-                <StaticImage alt='' src='../images/undraw_learning_sketching_nd4f.svg' style={{ width: '300px' }} />
+                <StaticImage
+                    alt=''
+                    placeholder='blurred'
+                    src='../images/undraw_learning_sketching_nd4f.svg'
+                    style={{ width: '300px' }}
+                />
                 <div>Smart manage <br/> time with AI</div>
             </div>
             <div className='navBar'>
