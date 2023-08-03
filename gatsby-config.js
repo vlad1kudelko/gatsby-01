@@ -4,9 +4,10 @@
 module.exports = {
   siteMetadata: {
     title: `Title`,
-    siteUrl: `https://idyllic-boba-dd6b35.netlify.app/`
+    siteUrl: `https://idyllic-boba-dd6b35.netlify.app/`,
+    policy: [{userAgent: '*', allow: '/'}],
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-robots-txt", "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
