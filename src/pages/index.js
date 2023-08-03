@@ -12,7 +12,7 @@ const IndexPage = () => {
                     <StaticImage
                         alt=''
                         placeholder='blurred'
-                        src='../images/undraw_learning_sketching_nd4f.svg'
+                        src='../images/man.png'
                         className='img'
                     />
                     <div className='title'>Smart 📈 manage <br/> time with AI</div>
@@ -33,14 +33,22 @@ const IndexPage = () => {
                     <div className='round1'><div/></div>
                     <div className='round2'><div/></div>
                 </div>
-                <div className='goButton'>
-                    <a href='#Download'>Download</a>
-                </div>
             </div>
             <div className='subBanners'>
                 <div className='box1'>
+                    <div className='gridBox'>
+                        <div className='nameBox'> [rating] </div>
+                        <div className='ratingNumber'>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div className='avaList'>
+                        <img className='avatar' src='https://thispersondoesnotexist.com/'/>
+                        <div className='avatar'></div>
+                    </div>
                 </div>
                 <div className='box2'>
+                    <div>Use the time to your own advantage every day</div>
                 </div>
                 <div className='box3'>
                     <div className='border1'>
@@ -49,6 +57,11 @@ const IndexPage = () => {
                     </div>
                     <div className='round1'><div/></div>
                     <div className='round2'><div/></div>
+                    <div className='contentBox'>
+                        <div className='nameBox'> [tasks done] </div>
+                        <br/>
+                        <div className='ratingNumber'>+22%</div>
+                    </div>
                 </div>
             </div>
         </header>
