@@ -12,9 +12,9 @@ const IndexPage = () => {
                     alt=''
                     placeholder='blurred'
                     src='../images/undraw_learning_sketching_nd4f.svg'
-                    style={{ width: '300px' }}
+                    className='img'
                 />
-                <div>Smart manage <br/> time with AI</div>
+                <div className='title'>Smart 📈 manage <br/> time with AI</div>
             </div>
             <div className='navBar'>
                 <div>
