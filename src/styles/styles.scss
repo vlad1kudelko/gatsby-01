@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
-body { background-color: black; }
-main {
-    font-family: 'Roboto', sans-serif, serif;
-    max-width: 1000px;
-    margin: auto;
-}
-
 $padding: 20px;
 $radius: 30px;
 $bgcolorfrs: #d1d4ff;
 
+body { background-color: black; }
+.page {
+    font-family: 'Roboto', sans-serif, serif;
+    max-width: 1000px;
+    margin: auto;
+}
 .headBanner {
     margin: $padding;
     margin-bottom: calc($padding / 2);
@@ -93,6 +92,15 @@ $bgcolorfrs: #d1d4ff;
             right: 0;
         }
     }
+    .goButton {
+        padding: 20px 30px;
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        a { text-align: center; }
+    }
 }
 .subBanners {
     $height: 250px;
@@ -160,4 +168,14 @@ $bgcolorfrs: #d1d4ff;
             right: 0;
         }
     }
+}
+
+.footer {
+    $bgcolor: #515161;
+    margin: $padding;
+    margin-bottom: 0;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    background-color: $bgcolor;
+    height: 200px;
 }

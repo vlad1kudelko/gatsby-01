@@ -5,7 +5,7 @@ import '../styles/styles.scss'
 
 const IndexPage = () => {
   return (
-    <>
+    <div className='page'>
         <header>
             <div className='headBanner'>
                 <div className='banner'>
@@ -33,6 +33,9 @@ const IndexPage = () => {
                     <div className='round1'><div/></div>
                     <div className='round2'><div/></div>
                 </div>
+                <div className='goButton'>
+                    <a href='#Download'>Download</a>
+                </div>
             </div>
             <div className='subBanners'>
                 <div className='box1'>
@@ -51,13 +54,15 @@ const IndexPage = () => {
         </header>
 
         <main>
+            <br/> <br/> <br/> <br/>
+            <br/> <br/> <br/> <br/>
         </main>
 
         <footer>
             <div className='footer'>
             </div>
         </footer>
-    </>
+    </div>
   )
 }
 
