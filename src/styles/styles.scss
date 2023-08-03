@@ -12,14 +12,12 @@ $radius: 30px;
 $bgcolorfrs: #d1d4ff;
 
 .headBanner {
-
     margin: $padding;
     margin-bottom: calc($padding / 2);
     background-color: $bgcolorfrs;
     height: 500px;
     border-radius: $radius;
     position: relative;
-
     .banner {
         position: absolute;
         top: 0; left: 0;
@@ -27,13 +25,9 @@ $bgcolorfrs: #d1d4ff;
         display: flex;
         align-items: center;
         justify-content: center;
-
         .img {
             width: 300px;
-
-            @media (max-width: 800px) {
-                display: none;
-            }
+            @media (max-width: 800px) { display: none; }
         }
         .title {
             font-size: 3em;
@@ -45,7 +39,6 @@ $bgcolorfrs: #d1d4ff;
         font-size: 1.1em;
         position: absolute;
         top: 0; left: 0; right: 0;
-
         @media (min-width: 800px) {
             padding: 20px 30px;
             display: flex;
@@ -55,7 +48,6 @@ $bgcolorfrs: #d1d4ff;
             & > *:nth-child(1) { padding: 20px 30px; }
             & > *:nth-child(2) { padding: 20px 30px; }
         }
-
         a {
             text-decoration: none;
             color: black;
@@ -75,7 +67,6 @@ $bgcolorfrs: #d1d4ff;
         text-transform: uppercase;
         font-weight: bold;
         background-color: black;
-
         a {
             text-decoration: none;
             color: yellow;
@@ -85,7 +76,6 @@ $bgcolorfrs: #d1d4ff;
             height: $radius;
             width: $radius;
             background-color: black;
-
             div {
                 position: absolute;
                 top: 0; right: 0;
@@ -104,43 +94,32 @@ $bgcolorfrs: #d1d4ff;
         }
     }
 }
-
 .subBanners {
     $height: 250px;
-
     margin: $padding;
     margin-top: calc($padding / 2);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: calc($padding / 2);
-
     @media (max-width: 800px) {
         grid-template-columns: 1fr 1fr;
     }
-
     .box1 {
         $bgcolor: #4f56d3;
-
         background-color: $bgcolor;
         border-radius: $radius;
         height: $height;
     }
     .box2 {
         $bgcolor: #f1f1f1;
-
         background-color: $bgcolor;
         border-radius: $radius;
-
-        @media (max-width: 800px) {
-            display: none;
-        }
+        @media (max-width: 800px) { display: none; }
     }
     .box3 {
         $bgcolor: #515161;
         $over: 100px;
-
         position: relative;
-
         .border1 {
             & > * {
                 position: absolute;
@@ -159,13 +138,11 @@ $bgcolorfrs: #d1d4ff;
                 background-color: $bgcolor;
             }
         }
-
         .round1, .round2 {
             position: absolute;
             height: $radius;
             width: $radius;
             background-color: black;
-
             div {
                 position: absolute;
                 top: 0; right: 0;
@@ -182,7 +159,5 @@ $bgcolorfrs: #d1d4ff;
             top: calc(-1 * (100px + $radius + $radius / 3) );
             right: 0;
         }
-
-
     }
 }
