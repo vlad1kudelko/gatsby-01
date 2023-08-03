@@ -20,5 +20,10 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  },{
+    resolve: 'gatsby-plugin-html-attributes',
+    options: {
+      lang: 'en'
+    }
   }]
 };
