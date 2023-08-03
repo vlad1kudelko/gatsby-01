@@ -43,7 +43,7 @@ const IndexPage = () => {
                         </div>
                     </div>
                     <div className='avaList'>
-                        <img className='avatar' src='https://thispersondoesnotexist.com/'/>
+                        <StaticImage className='avatar' src='https://thispersondoesnotexist.com/'/>
                         <div className='avatar'></div>
                     </div>
                 </div>
