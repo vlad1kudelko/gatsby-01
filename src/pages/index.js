@@ -18,17 +18,17 @@ const IndexPage = () => {
             </div>
             <div className='navBar'>
                 <div>
-                    <a href='#'>Logo</a>
+                    <a href='#Logo'>Logo</a>
                 </div>
                 <div className='btns'>
-                    <a href='#'>Blog</a>
-                    <a href='#'>Contact</a>
-                    <a href='#'>About</a>
+                    <a href='#Blog'>Blog</a>
+                    <a href='#Contact'>Contact</a>
+                    <a href='#About'>About</a>
                 </div>
                 <div></div>
             </div>
             <div className='upButton'>
-                <a href='#'>Download</a>
+                <a href='#Download'>Download</a>
                 <div className='round1'><div/></div>
                 <div className='round2'><div/></div>
             </div>
@@ -53,4 +53,11 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => {
+    return (
+        <>
+            <title>Home Page</title>
+            <meta name='description' content='Description' />
+        </>
+    )
+}
