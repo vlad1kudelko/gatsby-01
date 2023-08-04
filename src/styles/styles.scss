@@ -5,80 +5,20 @@ $radius: 30px;
 $bgcolorfrs: #d1d4ff;
 
 body { background-color: black; }
-.page {
-    font-family: 'Roboto', sans-serif, serif;
-    max-width: 1000px;
-    margin: auto;
-}
 .headBanner {
     margin: $padding;
     margin-bottom: calc($padding / 2);
     background-color: $bgcolorfrs;
     height: 500px;
     border-radius: $radius;
-    position: relative;
-    .banner {
-        position: absolute;
-        top: 0; left: 0;
-        right: 0; bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .img {
-            align-self: end;
-            @media (max-width: 800px) { display: none; }
-        }
-        .title {
-            font-size: 3em;
-            font-family: 'Ubuntu', sans-serif;
-            text-align: center;
-        }
-    }
-    .navBar {
-        font-size: 1.1em;
-        position: absolute;
-        top: 0; left: 0; right: 0;
-        @media (min-width: 800px) {
-            padding: 20px 30px;
-            display: flex;
-            justify-content: space-between;
-        }
-        @media (max-width: 800px) {
-            & > *:nth-child(1) { padding: 20px 30px; }
-            & > *:nth-child(2) { padding: 20px 30px; }
-        }
-        a {
-            text-decoration: none;
-            color: black;
-            &:hover { color: gray; }
-        }
-        .btns {
-            text-align: center;
-            & > * { margin: 20px; }
-        }
-    }
+
     .upButton {
-        padding: 20px 30px;
-        font-size: 1.1em;
-        position: absolute;
-        top: 0; right: 0;
         border-bottom-left-radius: $radius;
-        text-transform: uppercase;
-        font-weight: bold;
-        background-color: black;
-        a {
-            text-decoration: none;
-            color: yellow;
-        }
         .round1, .round2 {
-            position: absolute;
             height: $radius;
             width: $radius;
             background-color: black;
             div {
-                position: absolute;
-                top: 0; right: 0;
-                left: 0; bottom: 0;
                 border-top-right-radius: $radius;
                 background-color: $bgcolorfrs;
             }
@@ -97,49 +37,18 @@ body { background-color: black; }
     $height: 250px;
     margin: $padding;
     margin-top: calc($padding / 2);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: calc($padding / 2);
-    @media (max-width: 800px) {
-        grid-template-columns: 1fr 1fr;
-    }
     .box1 {
-        color: white;
         $bgcolor: #4f56d3;
         background-color: $bgcolor;
         border-radius: $radius;
         height: $height;
         .gridBox {
             padding: calc($padding * 2);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            @media (max-width: 800px) { grid-template-columns: 1fr; grid-gap: 10px; }
-            .nameBox {
-                text-transform: uppercase;
-                font-size: 0.8em;
-            }
-            .ratingNumber {
-                font-size: 4em;
-                @media (max-width: 800px) { font-size: 2em; }
-                span {
-                    position: relative;
-                    &:after {
-                        content: '⭐';
-                        position: absolute;
-                        top: 0; right: -20px;
-                        font-size: 20px;
-                    }
-                }
-            }
         }
         .avaList {
-            display: flex;
             padding: 0 calc($padding * 2);
             .avatar {
-                height: 50px;
-                width: 50px;
-                border-radius: 9999px;
-                background-color: yellow;
                 border: 4px solid $bgcolor;
                 margin-left: -15px;
                 z-index: 1;
@@ -151,31 +60,17 @@ body { background-color: black; }
         $bgcolor: #f1f1f1;
         background-color: $bgcolor;
         border-radius: $radius;
-        @media (max-width: 800px) { display: none; }
-        font-size: 1.3em;
-        font-weight: bold;
     }
     .box3 {
         $bgcolor: #515161;
         $over: 100px;
-        position: relative;
         .contentBox {
-            position: absolute;
             top: calc(-1 * $over); left: 0; right: 0; bottom: 0;
             padding: calc($padding * 2);
             color: white;
-            .nameBox {
-                text-transform: uppercase;
-                font-size: 0.8em;
-            }
-            .ratingNumber {
-                font-size: 4em;
-                @media (max-width: 800px) { font-size: 2em; }
-            }
         }
         .border1 {
             & > * {
-                position: absolute;
                 border-radius: $radius;
             }
             & > *:nth-child(1) {
@@ -192,14 +87,10 @@ body { background-color: black; }
             }
         }
         .round1, .round2 {
-            position: absolute;
             height: $radius;
             width: $radius;
             background-color: black;
             div {
-                position: absolute;
-                top: 0; right: 0;
-                left: 0; bottom: 0;
                 border-bottom-right-radius: $radius;
                 background-color: $bgcolorfrs;
             }
