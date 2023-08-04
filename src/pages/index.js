@@ -64,7 +64,7 @@ const IndexPage = () => {
                                 <StaticImage 
                                     alt=''
                                     placeholder='blurred'
-                                    src='../images/thispersondoesnotexist.jpg'
+                                    src='../images/ava1.jpg'
                                     className='rounded-full'/>
                             </div>
                             <div className='pl-2 text-xs'>The perfect organizer and team builder.</div>
@@ -100,13 +100,41 @@ const IndexPage = () => {
                 {/* end headers */}
             </header>
 
-            <main>
-                <br/> <br/> <br/> <br/>
-                <br/> <br/> <br/> <br/>
+            <main className='p-5 text-justify prose dark:prose-invert max-w-none'>
+                {/* parag 1 */}
+                <div className='my-5 px-5 bg-gray-700 flex items-center' style={{borderRadius: radius + 'px'}}>
+                    <div className='mx-5 h-16 w-16 shrink-0 hidden md:block'>
+                    <StaticImage 
+                        alt=''
+                        placeholder='blurred'
+                        src='../images/ava2.jpg'
+                        className='rounded-full'/>
+                    </div>
+                    <p>Welcome to our innovative platform that combines the power of AI with smart task and working time management. Are you tired of feeling overwhelmed by an endless to-do list and struggling to effectively prioritize and manage your work? Our AI-powered solution is here to transform your productivity and efficiency.</p>
+                </div>
+
+                {/* parag 2 */}
+                <div className='my-5 px-5 bg-gray-700 flex items-center' style={{borderRadius: radius + 'px'}}>
+                    <p>With our cutting-edge AI technology, we offer a unique approach to task management. Our platform leverages machine learning algorithms to learn your work patterns, preferences, and priorities. By analyzing your past tasks and their durations, our AI system can intelligently predict and suggest the time required for completing similar tasks in the future. This allows you to plan your workdays more efficiently and avoid the stress of unrealistic deadlines.</p>
+                    <div className='mx-5 h-16 w-16 shrink-0 hidden md:block'>
+                    <StaticImage 
+                        alt=''
+                        placeholder='blurred'
+                        src='../images/ava1.jpg'
+                        className='rounded-full'/>
+                    </div>
+                </div>
+                {/* end parag */}
             </main>
 
             <footer>
-                <div className='m-5 mb-0 bg-gray-700' style={{height: '200px', borderTopLeftRadius: radius + 'px', borderTopRightRadius: radius + 'px'}}>
+                <div className='p-5 m-5 mb-0 bg-gray-700 text-white' style={{borderTopLeftRadius: radius + 'px', borderTopRightRadius: radius + 'px'}}>
+                    <div className='py-5 text-center'>
+                        <a className='p-5 hover:text-gray-300 font-bold' href='#Blog'>Blog</a>
+                        <a className='p-5 hover:text-gray-300 font-bold' href='#Contact'>Contact</a>
+                        <a className='p-5 hover:text-gray-300 font-bold' href='#About'>About</a>
+                    </div>
+                    <div className='py-5 text-center'>© { new Date().getFullYear() } All rights reserved.</div>
                 </div>
             </footer>
         </div>
