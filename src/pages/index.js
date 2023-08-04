@@ -3,11 +3,17 @@ import { StaticImage } from 'gatsby-plugin-image'
 import 'normalize.css'
 import '../styles/styles.scss'
 
+// padding: "\<p-\d\|\<p.-\d\|\<m-\d\|\<m.-\d"
+
 const IndexPage = () => {
+    const over = 100;
+    const padding = 10;  // = p-2.5 (20 = p-5, 40 = p-10)
+    const radius = 30;
     return (
         <div className='max-w-screen-lg mx-auto'>
             <header>
-                <div className='headBanner relative overflow-hidden'>
+                {/* main header */}
+                <div className='bg-blue-200 m-5 mb-2.5 relative overflow-hidden' style={{borderRadius: radius + 'px', height: '500px'}}>
                     <div className='absolute pr-2 top-0 right-0 left-0 bottom-0 flex items-center justify-center'>
                         <StaticImage
                             alt=''
@@ -30,19 +36,21 @@ const IndexPage = () => {
                         </div>
                         <div></div>
                     </div>
-                    <div className='upButton absolute bg-black top-0 right-0 text-lg uppercase font-bold py-5 px-8'>
+                    <div className='absolute bg-black top-0 right-0 text-lg uppercase font-bold py-5 px-8' style={{borderBottomLeftRadius: radius + 'px'}}>
                         <a className='text-yellow-300' href='#Download'>Download</a>
-                        <div className='round1 absolute bg-black top-0'>
-                            <div className='absolute top-0 right-0 left-0 bottom-0'/>
+                        <div className='absolute bg-black top-0' style={{height: radius + 'px', width: radius + 'px', left: -radius + 'px'}}>
+                            <div className='bg-blue-200 absolute top-0 right-0 left-0 bottom-0' style={{borderTopRightRadius: radius + 'px'}}/>
                         </div>
-                        <div className='round2 absolute bg-black right-0'>
-                            <div className='absolute top-0 right-0 left-0 bottom-0'/>
+                        <div className='absolute bg-black right-0' style={{height: radius + 'px', width: radius + 'px', bottom: -radius + 'px'}}>
+                            <div className='bg-blue-200 absolute top-0 right-0 left-0 bottom-0' style={{borderTopRightRadius: radius + 'px'}}/>
                         </div>
                     </div>
                 </div>
-                <div className='subBanners grid grid-cols-2 md:grid-cols-3'>
-                    <div className='box1 text-white'>
-                        <div className='gridBox grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-0'>
+                {/* sub header */}
+                <div className='m-5 mt-2.5 grid grid-cols-2 md:grid-cols-3 gap-2.5'>
+                    {/* box1 */}
+                    <div className='text-white bg-blue-700' style={{borderRadius: radius + 'px', height: '250px'}}>
+                        <div className='gridBox p-10 grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-0'>
                             <div className='text-xs uppercase'> [rating] </div>
                             <div className='text-3xl md:text-6xl text-center'>
                                 <span className='relative'>
@@ -51,36 +59,43 @@ const IndexPage = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className='avaList flex'>
+                        <div className='py-0 px-10 flex'>
                             <StaticImage 
                                 alt=''
                                 placeholder='blurred'
                                 src='../images/thispersondoesnotexist.jpg'
-                                className='avatar h-12 w-12 rounded-full'/>
-                            <div className='avatar h-12 w-12 rounded-full bg-yellow-300'></div>
+                                className='h-12 w-12 rounded-full'/>
+                            <div className='h-12 w-12 rounded-full bg-yellow-300 border-4 border-blue-700 z-10' style={{marginLeft: '-15px'}}></div>
                         </div>
                     </div>
-                    <div className='box2 hidden md:block text-lg font-bold'>
+                    {/* box2 */}
+                    <div className='bg-gray-300 p-10 hidden md:block text-lg font-bold' style={{borderRadius: radius + 'px'}}>
                         <div>Use the time to your own advantage every day</div>
                     </div>
-                    <div className='box3 relative text-white'>
-                        <div className='border1'>
-                            <div className='absolute right-0 bottom-0 bg-black'></div>
-                            <div className='absolute right-0 bottom-0 left-0'></div>
+                    {/* box3 */}
+                    <div className='relative text-white'>
+                        {/* black background */}
+                        <div className='absolute right-0 bottom-0 bg-black' style={{top: (- over - padding) + 'px', left: (- padding) + 'px', borderRadius: radius + 'px', borderTopRightRadius: '0px'}}></div>
+                        {/* color background */}
+                        <div className='absolute right-0 bottom-0 left-0 bg-gray-700' style={{top: (- over) + 'px', borderRadius: radius + 'px'}}></div>
+                        {/* left */}
+                        <div className='absolute bg-black' style={{height: radius + 'px', width: radius + 'px', top: (- padding - radius) + 'px', left: (- padding - radius) + 'px'}}>
+                            <div className='bg-blue-200 absolute top-0 right-0 left-0 bottom-0' style={{borderBottomRightRadius: radius + 'px'}}/>
                         </div>
-                        <div className='round1 absolute'>
-                            <div className='absolute top-0 right-0 left-0 bottom-0'/>
+                        {/* right */}
+                        <div className='absolute bg-black right-0' style={{height: radius + 'px', width: radius + 'px', top: (- over - padding - radius) + 'px'}}>
+                            <div className='bg-blue-200 absolute top-0 right-0 left-0 bottom-0' style={{borderBottomRightRadius: radius + 'px'}}/>
                         </div>
-                        <div className='round2 absolute right-0'>
-                            <div className='absolute top-0 right-0 left-0 bottom-0'/>
-                        </div>
-                        <div className='contentBox absolute left-0 right-0 bottom-0'>
+                        {/* body, CALC - padding */}
+                        <div className='p-10 absolute left-0 right-0 bottom-0' style={{top: (- over) + 'px'}}>
                             <div className='text-xs uppercase'> [tasks done] </div>
                             <br/>
                             <div className='text-3xl md:text-6xl text-center'>+22%</div>
                         </div>
                     </div>
+                    {/* end boxs */}
                 </div>
+                {/* end headers */}
             </header>
 
             <main>
@@ -89,7 +104,7 @@ const IndexPage = () => {
             </main>
 
             <footer>
-                <div className='footer'>
+                <div className='m-5 mb-0 bg-gray-700' style={{height: '200px', borderTopLeftRadius: radius + 'px', borderTopRightRadius: radius + 'px'}}>
                 </div>
             </footer>
         </div>
