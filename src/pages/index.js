@@ -19,8 +19,7 @@ const IndexPage = () => {
                             <StaticImage
                                 alt=''
                                 placeholder='blurred'
-                                src='../images/man.png'
-                            />
+                                src='../images/man.png'/>
                         </div>
                         <div className='text-5xl text-center' style={{fontFamily: 'Ubuntu, sans-serif'}}>
                             Smart 📈 manage <br/> time with AI
@@ -60,7 +59,7 @@ const IndexPage = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className='px-10 pb-10 flex'>
+                        <div className='hidden md:flex px-10 pb-10'>
                             <StaticImage 
                                 alt=''
                                 placeholder='blurred'
