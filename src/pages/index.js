@@ -60,12 +60,14 @@ const IndexPage = () => {
                             </div>
                         </div>
                         <div className='hidden md:flex px-10 pb-10'>
-                            <StaticImage 
-                                alt=''
-                                placeholder='blurred'
-                                src='../images/thispersondoesnotexist.jpg'
-                                className='h-12 w-12 rounded-full'/>
-                            <div className='h-12 w-12 rounded-full bg-yellow-300 border-4 border-blue-700 z-10' style={{marginLeft: '-15px'}}></div>
+                            <div className='h-14 w-14 shrink-0'>
+                                <StaticImage 
+                                    alt=''
+                                    placeholder='blurred'
+                                    src='../images/thispersondoesnotexist.jpg'
+                                    className='rounded-full'/>
+                            </div>
+                            <div className='pl-2 text-xs'>The perfect organizer and team builder.</div>
                         </div>
                     </div>
                     {/* box2 */}
