@@ -15,12 +15,13 @@ const IndexPage = () => {
                 {/* main header */}
                 <div className='bg-blue-200 m-5 mb-2.5 relative overflow-hidden' style={{borderRadius: radius + 'px', height: '500px'}}>
                     <div className='absolute pr-2 top-0 right-0 left-0 bottom-0 flex items-center justify-center'>
-                        <StaticImage
-                            alt=''
-                            placeholder='blurred'
-                            src='../images/man.png'
-                            className='hidden md:block self-end'
-                        />
+                        <div className='hidden md:block self-end'>
+                            <StaticImage
+                                alt=''
+                                placeholder='blurred'
+                                src='../images/man.png'
+                            />
+                        </div>
                         <div className='text-5xl text-center' style={{fontFamily: 'Ubuntu, sans-serif'}}>
                             Smart 📈 manage <br/> time with AI
                         </div>
