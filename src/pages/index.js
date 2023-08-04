@@ -49,7 +49,7 @@ const IndexPage = () => {
                 {/* sub header */}
                 <div className='m-5 mt-2.5 grid grid-cols-2 md:grid-cols-3 gap-2.5'>
                     {/* box1 */}
-                    <div className='text-white bg-blue-700' style={{borderRadius: radius + 'px', height: '250px'}}>
+                    <div className='text-white bg-blue-700' style={{borderRadius: radius + 'px'}}>
                         <div className='gridBox p-10 grid grid-cols-1 gap-2.5 md:grid-cols-2 md:gap-0'>
                             <div className='text-xs uppercase'> [rating] </div>
                             <div className='text-3xl md:text-6xl text-center'>
@@ -59,7 +59,7 @@ const IndexPage = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className='py-0 px-10 flex'>
+                        <div className='px-10 pb-10 flex'>
                             <StaticImage 
                                 alt=''
                                 placeholder='blurred'
