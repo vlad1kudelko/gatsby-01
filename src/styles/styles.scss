@@ -17,19 +17,16 @@ body { background-color: black; }
         .round1, .round2 {
             height: $radius;
             width: $radius;
-            background-color: black;
             div {
                 border-top-right-radius: $radius;
                 background-color: $bgcolorfrs;
             }
         }
         .round1 {
-            top: 0;
             left: -$radius;
         }
         .round2 {
             bottom: -$radius;
-            right: 0;
         }
     }
 }
@@ -65,9 +62,8 @@ body { background-color: black; }
         $bgcolor: #515161;
         $over: 100px;
         .contentBox {
-            top: calc(-1 * $over); left: 0; right: 0; bottom: 0;
+            top: calc(-1 * $over);
             padding: calc($padding * 2);
-            color: white;
         }
         .border1 {
             & > * {
@@ -76,13 +72,10 @@ body { background-color: black; }
             & > *:nth-child(1) {
                 top: calc(-1 * ($over + $padding / 2) );
                 left: calc($padding / -2);
-                right: 0; bottom: 0;
-                background-color: black;
                 border-top-right-radius: 0;
             }
             & > *:nth-child(2) {
                 top: calc(-1 * $over );
-                left: 0; right: 0; bottom: 0;
                 background-color: $bgcolor;
             }
         }
@@ -101,7 +94,6 @@ body { background-color: black; }
         }
         .round2 {
             top: calc(-1 * (100px + $radius + $radius / 3) );
-            right: 0;
         }
     }
 }

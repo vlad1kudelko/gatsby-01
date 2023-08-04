@@ -32,10 +32,10 @@ const IndexPage = () => {
                 </div>
                 <div className='upButton absolute bg-black top-0 right-0 text-lg uppercase font-bold py-5 px-8'>
                     <a className='text-yellow-300' href='#Download'>Download</a>
-                    <div className='round1 absolute'>
+                    <div className='round1 absolute bg-black top-0'>
                         <div className='absolute top-0 right-0 left-0 bottom-0'/>
                     </div>
-                    <div className='round2 absolute'>
+                    <div className='round2 absolute bg-black right-0'>
                         <div className='absolute top-0 right-0 left-0 bottom-0'/>
                     </div>
                 </div>
@@ -63,18 +63,18 @@ const IndexPage = () => {
                 <div className='box2 hidden md:block text-lg font-bold'>
                     <div>Use the time to your own advantage every day</div>
                 </div>
-                <div className='box3 relative'>
+                <div className='box3 relative text-white'>
                     <div className='border1'>
-                        <div className='absolute'></div>
-                        <div className='absolute'></div>
+                        <div className='absolute right-0 bottom-0 bg-black'></div>
+                        <div className='absolute right-0 bottom-0 left-0'></div>
                     </div>
                     <div className='round1 absolute'>
                         <div className='absolute top-0 right-0 left-0 bottom-0'/>
                     </div>
-                    <div className='round2 absolute'>
+                    <div className='round2 absolute right-0'>
                         <div className='absolute top-0 right-0 left-0 bottom-0'/>
                     </div>
-                    <div className='contentBox absolute'>
+                    <div className='contentBox absolute left-0 right-0 bottom-0'>
                         <div className='text-xs uppercase'> [tasks done] </div>
                         <br/>
                         <div className='text-3xl md:text-6xl text-center'>+22%</div>
