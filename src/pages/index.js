@@ -3,6 +3,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 import 'normalize.css'
 import '../styles/styles.scss'
 
+import ava1 from '../images/ava1.jpg'
+import ava2 from '../images/ava2.jpg'
+import ava3 from '../images/ava3.avif'
+
 // padding: "\<p-\d\|\<p.-\d\|\<m-\d\|\<m.-\d"
 
 const IndexPage = () => {
@@ -100,29 +104,12 @@ const IndexPage = () => {
                 {/* end headers */}
             </header>
 
-            <main className='p-5 text-justify prose dark:prose-invert max-w-none'>
+            <main className='text-justify prose dark:prose-invert max-w-none'>
                 {/* parag 1 */}
-                <div className='my-5 px-5 bg-gray-700 flex items-center' style={{borderRadius: radius + 'px'}}>
-                    <div className='mx-5 h-16 w-16 shrink-0 hidden md:block'>
-                    <StaticImage 
-                        alt=''
-                        placeholder='blurred'
-                        src='../images/ava2.jpg'
-                        className='rounded-full'/>
-                    </div>
-                    <p>Welcome to our innovative platform that combines the power of AI with smart task and working time management. Are you tired of feeling overwhelmed by an endless to-do list and struggling to effectively prioritize and manage your work? Our AI-powered solution is here to transform your productivity and efficiency.</p>
-                </div>
-
-                {/* parag 2 */}
-                <div className='my-5 px-5 bg-gray-700 flex items-center' style={{borderRadius: radius + 'px'}}>
-                    <p>With our cutting-edge AI technology, we offer a unique approach to task management. Our platform leverages machine learning algorithms to learn your work patterns, preferences, and priorities. By analyzing your past tasks and their durations, our AI system can intelligently predict and suggest the time required for completing similar tasks in the future. This allows you to plan your workdays more efficiently and avoid the stress of unrealistic deadlines.</p>
-                    <div className='mx-5 h-16 w-16 shrink-0 hidden md:block'>
-                    <StaticImage 
-                        alt=''
-                        placeholder='blurred'
-                        src='../images/ava1.jpg'
-                        className='rounded-full'/>
-                    </div>
+                <div className='m-5 bg-gray-700 overflow-hidden relative' style={{borderRadius: radius + 'px'}}>
+                    <img className='mx-auto md:m-0 md:absolute md:-top-6 md:-left-6 rounded-full h-32 w-32' src={ava3} alt='author 3' />
+                    <div className='m-5 md:ml-32'>Welcome to our innovative platform that combines the power of AI with smart task and working time management. Our AI-powered solution is here to transform your productivity and efficiency.</div>
+                    <div className='m-5 md:ml-32'>With our cutting-edge AI technology, we offer a unique approach to task management. Our platform leverages machine learning algorithms to learn your work patterns, preferences, and priorities.</div>
                 </div>
                 {/* end parag */}
             </main>
