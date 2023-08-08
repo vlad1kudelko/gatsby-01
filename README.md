@@ -47,3 +47,11 @@
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+## Screenshots
+
+<img src="demo/screen_1.png" alt="site" />
+
+<img src="demo/screen_2.png" alt="pagespeed mobile" />
+
+<img src="demo/screen_3.png" alt="pagespeed desktop" />
