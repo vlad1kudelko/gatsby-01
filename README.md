@@ -4,15 +4,11 @@
     </a>
 </p>
 
-<h1 align="center"> Gatsby example </h1>
+<h1 align="center"> Gatsby example of work </h1>
 
-## 🚀 Demo (Netlify)
+## 🚀 Demo
 
-This site is hosted by netlify, You can click on the button and get acquainted with it live.
-
-<a href="https://idyllic-boba-dd6b35.netlify.app/">
-    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
-</a>
+This site is fosted by netlify, You can follow the [link](https://idyllic-boba-dd6b35.netlify.app/) and get acquainted with it live.
 
 ## 🚀 Screenshots
 
