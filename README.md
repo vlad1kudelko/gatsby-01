@@ -4,24 +4,17 @@
     </a>
 </p>
 
-
-<p align="center">
-    <a href="https://www.gatsbyjs.com/">
-        <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-    </a>
-</p>
-
-<h1 align="center">
-    Gatsby Minimal Starter
-</h1>
+<h1 align="center"> Gatsby example </h1>
 
 ## 🚀 Demo (Netlify)
+
+This site is hosted by netlify, You can click on the button and get acquainted with it live.
 
 <a href="https://idyllic-boba-dd6b35.netlify.app/">
     <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
 </a>
 
-## Screenshots
+## 🚀 Screenshots
 
 <img src="demo/screen_1.png" alt="site" />
 
