@@ -108,8 +108,9 @@ const IndexPage = () => {
                 {/* parag 1 */}
                 <div className='m-5 bg-gray-700 overflow-hidden relative' style={{borderRadius: radius + 'px'}}>
                     <img className='mx-auto md:m-0 md:absolute md:-top-6 md:-left-6 rounded-full h-32 w-32' src={ava3} alt='author 3' />
-                    <div className='m-5 md:ml-32'>Welcome to our innovative platform that combines the power of AI with smart task and working time management. Our AI-powered solution is here to transform your productivity and efficiency.</div>
-                    <div className='m-5 md:ml-32'>With our cutting-edge AI technology, we offer a unique approach to task management. Our platform leverages machine learning algorithms to learn your work patterns, preferences, and priorities.</div>
+                    <div className='m-5 md:ml-32'>
+                        Welcome to our innovative platform that combines the power of AI with smart task and working time management. Our AI-powered solution is here to transform your productivity and efficiency. With our cutting-edge AI technology, we offer a unique approach to task management. Our platform leverages machine learning algorithms to learn your work patterns, preferences, and priorities.
+                    </div>
                 </div>
                 {/* end parag */}
             </main>
